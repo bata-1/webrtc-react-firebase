@@ -1,5 +1,8 @@
 import React from "react";
 
+import InputFormLocal from "./InputFormLocal";
+import inputFormRemote from "./InputFormRemote";
+
 const getMedia = async () => {
   const constraints = { audio: true, video: true };
 
@@ -15,7 +18,12 @@ const getMedia = async () => {
 getMedia();
 
 const App = () => {
-  return <div>Hello, React!</div>;
+  return (
+    <>
+      <InputFormLocal />
+      <inputFormRemote />
+    </>
+  );
 };
 
 export default App;
